@@ -10,7 +10,7 @@ git clone ${repo} ${target}
 cd ${target}
 git checkout ${hash}
 
-cp -R ~/credentials/* .
+cp -R ~/proxy.conf.d/* .
 
 docker-compose build && docker-compose down && docker-compose up -d
 
